@@ -20,7 +20,7 @@ export default function Page(){
        </div>
          <button onClick={handleClick}>누르세요!</button>
          {btnClick  && (  <Modal btnClick ={btnClick} >
-            안녕하세요dd
+            안녕하세요dd 여기에요
 
             <button onClick={handleCloseModal}>닫기</button>
         </Modal>)}
