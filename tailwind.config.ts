@@ -8,10 +8,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      dropShadow: {
+        'bxl': '3px 3px 0px rgba(111, 122, 204)',
+        'blackxl': '2px 2px 1px rgba(0, 0, 0 , 0.4)',
+      }
     },
   },
   plugins: [],

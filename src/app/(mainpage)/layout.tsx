@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
 import { ReactNode } from "react";
+import ClientLayout from "../clayout/clientlayout";
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -28,13 +29,15 @@ export default function RootLayout({children,mainimg,sub,subbtn}:{ children: Rea
       <body
         className={`bg-[#D9DEFC] w-full h-full`}
       >
-        <div className="flex justify-center">
-        {mainimg}
-          <div className="flex flex-col">
-          {sub}
-          {subbtn}
+      
+        <div className="flex justify-between p-16">
+          {mainimg}
+            <div className="flex flex-col w-1/2 justify-around">
+            {sub}
+            {subbtn}
+            </div>
+            <div id="modal_root"></div>
           </div>
-        </div>
       </body>
     </html>
   );
