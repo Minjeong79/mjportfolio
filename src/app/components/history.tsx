@@ -1,52 +1,69 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
-import { useRecoilState } from 'recoil';
-import { modalState } from "../recoil/atom";
+import { useEffect, useState } from "react";
+import { btnBox, coinBox } from "@/lib/db";
+import { BtnType, CoinType } from "@/lib/type";
+import { useStore, useStoreModal } from "../store/store";
 
 export default function History() {
-    const [modal, setModal] = useRecoilState(modalState);
- 
-    // const handleOpenModal = () => (
-    //     setModal(true)
-    // )
-    
-    return (
-    <ul className="flex gap-4">
-      <li className="">
-        <button>
-          <Image
-            className="drop-shadow-blackxl"
-            src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn1.png"
-            width={60}
-            height={60}
-            alt="버튼 이미지"
-          />
-        </button>
-      </li>
-      <li>
-        <button>
-        <Image
-          className="drop-shadow-blackxl"
-          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn2.png"
-          width={60}
-          height={60}
-          alt="버튼 이미지"
-        />
-        </button>
-        
-      </li>
-      <li>
-        <button>
-        <Image
-          className="drop-shadow-blackxl"
-          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn3.png"
-          width={60}
-          height={60}
-          alt="버튼 이미지"
-        />
-        </button>
-      </li>
-    </ul>
+  const {increment } = useStore();
+  const { num, value, innum } = useStoreModal();
+
+  const [data, setData] = useState<CoinType[]>([]);
+  const [dataBtn, setDataBtn] = useState<BtnType[]>([]);
+
+  useEffect(() => {
+    const fetchCoinBox = async () => {
+      const isData = await coinBox();
+      const isDataBtn = await btnBox();
+      if (isData && isDataBtn) {
+        setData(isData);
+        setDataBtn(isDataBtn);
+      }
+    };
+    fetchCoinBox();
+  }, []);
+
+  return (
+    <div className="flex gap-8">
+      <div className="">
+        <p className="mb-2 text-center">동전을 선택 해주세요!</p>
+        <div className="bg-white p-3 rounded-lg">
+          <ul className="flex gap-2">
+            {data.map((item) => (
+              <li key={item.id}>
+                <button onClick={()=>increment(item.id)}>
+                  <Image
+                    src={item.imgurl}
+                    width={60}
+                    height={60}
+                    alt="동전 이미지"
+                  />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="">
+        <p className="mb-2 text-center">경력 / 기술 스택 / 블로그 </p>
+        <div className="bg-white p-3 rounded-lg">
+        <ul className="flex gap-2">
+        {dataBtn.map((item) => (
+              <li key={item.id}>
+                <button onClick={()=>innum(item.id, item.value)}>
+                  <Image
+                    src={item.imgurl}
+                    width={60}
+                    height={60}
+                    alt="아이콘"
+                  />
+                </button>
+              </li>
+            ))}
+        </ul>
+        </div>
+      </div>
+    </div>
   );
 }

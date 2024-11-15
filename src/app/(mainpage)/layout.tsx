@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
 import { ReactNode } from "react";
-import ClientLayout from "../clayout/clientlayout";
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -19,10 +18,11 @@ export const metadata: Metadata = {
   description: "반갑습니다 프론트 개발자 정민정 입니다.",
 };
 
-export default function RootLayout({children,mainimg,sub,subbtn}:{ children: ReactNode;
+export default function RootLayout({children,mainimg,sub,subbtn,modal}:{ children: ReactNode;
   mainimg: ReactNode;
   sub: ReactNode;
-  subbtn: ReactNode;}
+  subbtn: ReactNode;
+  modal: ReactNode;}
 ) {
   return (
     <html lang="kr">
@@ -32,12 +32,14 @@ export default function RootLayout({children,mainimg,sub,subbtn}:{ children: Rea
       
         <div className="flex justify-between p-16">
           {mainimg}
-            <div className="flex flex-col w-1/2 justify-around">
+            <div className="flex flex-col w-1/2 justify-evenly">
             {sub}
             {subbtn}
             </div>
-            <div id="modal_root"></div>
+           
           </div>
+          {modal}
+          <div id="modal_root"></div>
       </body>
     </html>
   );
