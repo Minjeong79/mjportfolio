@@ -1,10 +1,19 @@
 import { supabase } from "@/utils/supabase/createClient";
-import { User } from "@supabase/supabase-js";
 
-export async function name() {
-    
-let { data: mainbox, error } = await supabase
-.from('mainbox')
-.select("*")
+export async function coinBox() {
+  let { data, error } = await supabase.from("coinbox").select("*");
+  if (error) {
+    throw error;
+  }
 
+  return data;
+}
+
+export async function btnBox() {
+  let { data, error } = await supabase.from("btnbox").select("*");
+  if (error) {
+    throw error;
+  }
+
+  return data;
 }
