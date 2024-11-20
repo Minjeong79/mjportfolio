@@ -11,16 +11,18 @@ export default function Modal({ children }: { children: ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
   const { num, value, innum } = useStoreModal();
 
+  console.log(`${num}: ${value}`);
   useEffect(() => {
+    console.log(`${isMounted}--------------------`)
     setIsMounted(true);
-    if (!dialogRef.current?.open) {
+    if ( !dialogRef.current?.open) {
       dialogRef.current?.showModal();
       dialogRef.current?.scrollTo({
         top: 0,
       });
     }
   }, [value]);
-  
+
   if (!isMounted) {
     return null;  // 서버 사이드에서는 렌더링하지 않음
   }
@@ -32,10 +34,16 @@ export default function Modal({ children }: { children: ReactNode }) {
     <dialog
       ref={dialogRef}
       className=""
-      onClose={()=>router.back}
       onClick={(e) => {
-        if ((e.target as any).nodeName === "DIALOG") {
-          router.back();
+        if (e.target === dialogRef.current) { // 정확히 모달 외부 클릭인지 확인
+          console.log('click')
+          setIsMounted(false);
+          innum(num,false);
+          dialogRef.current.close(); // 모달 닫기
+         
+         
+          router.back(); // 이전 페이지로 이동
+          
         }
       }}
     >
