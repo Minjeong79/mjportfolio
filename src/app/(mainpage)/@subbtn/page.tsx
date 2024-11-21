@@ -1,5 +1,5 @@
-import History from "../../components/history";
+import HistoryBtnList from "../../components/historyBtnList";
 
 export default function Page(){
-    return <><History/></>
+    return <><HistoryBtnList/></>
 }

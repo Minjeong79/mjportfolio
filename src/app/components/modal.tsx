@@ -11,9 +11,7 @@ export default function Modal({ children }: { children: ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
   const { num, value, innum } = useStoreModal();
 
-  console.log(`${num}: ${value}`);
   useEffect(() => {
-    console.log(`${isMounted}--------------------`)
     setIsMounted(true);
     if ( !dialogRef.current?.open) {
       dialogRef.current?.showModal();
@@ -33,7 +31,7 @@ export default function Modal({ children }: { children: ReactNode }) {
   return createPortal(
     <dialog
       ref={dialogRef}
-      className=""
+      className="overflow-hidden rounded-lg focus:outline-none"
       onClick={(e) => {
         if (e.target === dialogRef.current) { // 정확히 모달 외부 클릭인지 확인
           console.log('click')

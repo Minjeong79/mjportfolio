@@ -17,3 +17,15 @@ export async function btnBox() {
 
   return data;
 }
+
+export async function mainItemsBox(num: number) {
+  let { data, error } = await supabase
+    .from("mainitem")
+    .select("*")
+    .eq("id", num);
+  if (error) {
+    throw error;
+  }
+
+  return data;
+}
