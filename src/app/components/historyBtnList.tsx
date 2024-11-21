@@ -5,8 +5,8 @@ import { btnBox, coinBox } from "@/lib/db";
 import { BtnType, CoinType } from "@/lib/type";
 import { useStore, useStoreModal } from "../store/store";
 
-export default function History() {
-  const {increment } = useStore();
+export default function HistoryBtnList() {
+  const {numitem } = useStore();
   const { num, value, innum } = useStoreModal();
 
   const [data, setData] = useState<CoinType[]>([]);
@@ -32,7 +32,7 @@ export default function History() {
           <ul className="flex gap-2">
             {data.map((item) => (
               <li key={item.id}>
-                <button onClick={()=>increment(item.id)}>
+                <button onClick={()=>numitem(item.id+2)} className="focus:outline-none">
                   <Image
                     src={item.imgurl}
                     width={60}
@@ -50,8 +50,8 @@ export default function History() {
         <div className="bg-white p-3 rounded-lg">
         <ul className="flex gap-2">
         {dataBtn.map((item) => (
-              <li key={item.id}>
-                <button onClick={()=>innum(item.id, item.value)}>
+              <li key={item.id} >
+                <button onClick={()=>innum(item.id, item.value)} className="focus:outline-none">
                   <Image
                     src={item.imgurl}
                     width={60}

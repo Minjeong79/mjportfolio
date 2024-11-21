@@ -2,7 +2,7 @@ import { create } from 'zustand';
 
 interface Store {
   count: number;
-  increment: (i:number) => number;
+  numitem: (i:number) => number;
 }
 
 interface StoreModalType {
@@ -14,7 +14,7 @@ interface StoreModalType {
 
 export const useStore = create<Store>((set) => ({
   count: 0,
-  increment: (i) => {
+  numitem: (i) => {
     set((state) => ({ count: i })); // 상태 업데이트: count에 i를 더함
     return i; // i 값만 반환
   },

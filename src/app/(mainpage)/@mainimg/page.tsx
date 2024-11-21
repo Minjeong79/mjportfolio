@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Counter from "../../components/counter";
+import CounterItem from "../../components/counter";
 
 export default function Page(){
    
@@ -10,7 +10,7 @@ export default function Page(){
         height={680}
         alt="뽑기 이미지"
       />
-      <Counter/>
+      <CounterItem/>
          {/* <button onClick={handleClick}>누르세요!</button>
          {btnClick  && (  <Modal btnClick ={btnClick} >
             안녕하세요dd 여기에요
