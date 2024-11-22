@@ -29,3 +29,15 @@ export async function mainItemsBox(num: number) {
 
   return data;
 }
+
+export async function lIconBox() {
+  let { data, error } = await supabase
+    .from("lbox")
+    .select("*")
+    .order("id", { ascending: true });
+  if (error) {
+    throw error;
+  }
+
+  return data;
+}
