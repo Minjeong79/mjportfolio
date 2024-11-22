@@ -15,3 +15,9 @@ export interface MainItemType{
     imgurl:string;
     value:boolean;
 }
+
+export interface IconType{
+    id:number;
+    imgurl:string;
+    name:string;
+}

@@ -13,7 +13,7 @@ export default function ModalWrapPage() {
   const { num } = useStoreModal();
   console.log(num);
   return (
-    <div className="w-[80vw] h-[900px] p-6">
+    <div className="w-[80vw] h-[900px] p-12 bg-[#f9f9fd]">
       {num === 0 ? (
         <HistoryPage />
       ) : num === 1 ? (
