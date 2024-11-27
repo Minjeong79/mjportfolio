@@ -30,9 +30,9 @@ export default function RootLayout({children,mainimg,sub,subbtn,modal}:{ childre
         className={`bg-[#D9DEFC] w-full h-full`}
       >
       
-        <div className="flex justify-between p-16">
+        <div className="flex flex-col gap-y-4 p-8 xl:flex-row xl:justify-between xl:p-16">
           {mainimg}
-            <div className="flex flex-col w-1/2 justify-evenly">
+            <div className="flex flex-col xl:w-1/2 xl:justify-evenly">
             {sub}
             {subbtn}
             </div>

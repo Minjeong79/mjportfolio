@@ -25,7 +25,7 @@ export default function CounterItem() {
   return (
     <div style={{ position: "absolute", bottom: "54px", left: "44px" }}>
       {item.map((item) => (
-        <button onClick={()=>innum(item.id, item.value)}>
+        <button onClick={()=>innum(item.id, item.value)} key={item.id}>
           <Image
             src={item.imgurl}
             width={200}
