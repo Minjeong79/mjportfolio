@@ -11,7 +11,10 @@ export default {
       dropShadow: {
         'bxl': '3px 3px 0px rgba(111, 122, 204)',
         'blackxl': '2px 2px 1px rgba(0, 0, 0 , 0.4)',
-      }
+      },
+      height: {
+        '550': '550px',
+      },
     },
   },
   plugins: [],

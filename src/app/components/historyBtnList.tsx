@@ -25,11 +25,11 @@ export default function HistoryBtnList() {
   }, []);
 
   return (
-    <div className="flex gap-8">
-      <div className="">
+    <div className="flex flex-col gap-8 xl:flex-row xl:justify-evenly">
+      <div className="mt-8 xl:mt-0">
         <p className="mb-2 text-center">동전을 선택 해주세요!</p>
         <div className="bg-white p-3 rounded-lg">
-          <ul className="flex gap-2">
+          <ul className="flex justify-around xl:gap-2">
             {data.map((item) => (
               <li key={item.id}>
                 <button onClick={()=>numitem(item.id+2)} className="focus:outline-none">
@@ -48,7 +48,7 @@ export default function HistoryBtnList() {
       <div className="">
         <p className="mb-2 text-center">경력 / 기술 스택 / 블로그 </p>
         <div className="bg-white p-3 rounded-lg">
-        <ul className="flex gap-2">
+        <ul className="flex justify-around xl:gap-2">
         {dataBtn.map((item) => (
               <li key={item.id} >
                 <button onClick={()=>innum(item.id, item.value)} className="focus:outline-none">
