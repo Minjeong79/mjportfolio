@@ -3,7 +3,7 @@ import CounterItem from "../../components/counter";
 
 export default function Page(){
    
-    return <div className="mx-auto xl:m-0 xl:w-1/2 ">
+    return <div className="mx-auto relative  ">
          <Image
         src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/main/main-img.png"
         width={580}

@@ -14,16 +14,14 @@ export default function CounterItem() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await mainItemsBox(count);
-      console.log(data);
       if (data) {
         setItem(data);
       }
     };
     fetchData();
   }, [count]);
-  console.log(item);
   return (
-    <div style={{ position: "absolute", bottom: "54px", left: "44px" }}>
+    <div className="absolute inset-x-0 text-center bottom-7 animate-bounce">
       {item.map((item) => (
         <button onClick={()=>innum(item.id, item.value)} key={item.id}>
           <Image
