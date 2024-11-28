@@ -14,14 +14,18 @@ export default function Modal({ children }: { children: ReactNode }) {
   const { num, value, innum } = useStoreModal();
 
   useEffect(() => {
-    setIsMounted(true);
-    if (!dialogRef.current?.open) {
+    setIsMounted(true); 
+    if (isMounted&& !dialogRef.current?.open) {
       dialogRef.current?.showModal();
       dialogRef.current?.scrollTo({
         top: 0,
       });
+       // 모달 켜질 시 body스크롤 금지
+      document.body.style.overflow = "hidden";
     }
-   // 모달 켜질 시 body스크롤 금지
+    return () => {
+      document.body.style.overflow = "auto"; // 모달 닫힐 때 스크롤 복구
+    };
   }, [value]);
 
   if (!isMounted) {
@@ -46,12 +50,14 @@ export default function Modal({ children }: { children: ReactNode }) {
       }}
     >
       <button
-      className="absolute top-2.5 right-2.5"
+      className="absolute top-2.5 right-2.5 z-30"
         onClick={() => {
           if (dialogRef.current) {
             console.log(99999999999);
+            document.body.style.overflow = "auto";
             setIsMounted(false);
             innum(num, false);
+           
             dialogRef.current.close(); 
             router.back(); 
           }

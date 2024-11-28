@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CareerDetail3Page() {
   return (
-    <section className="flex gap-x-8 h-80 overflow-y-scroll">
+    <section className="flex flex-col h-screen xl:w-full xl:gap-x-8 xl:h-96 xl:overflow-y-scroll">
       <div className="flex flex-col">
         <h4 className="font-bold text-xl">디자인플러스와우</h4>
         <p className="text-lg">(2018.06-2019.09)</p>

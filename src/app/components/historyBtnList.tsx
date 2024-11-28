@@ -24,6 +24,10 @@ export default function HistoryBtnList() {
     fetchCoinBox();
   }, []);
 
+  const handleClickMove = ()=>{
+    window.scrollTo(0, 0);
+    console.log('here!!');
+  }
   return (
     <div className="flex flex-col gap-8 xl:flex-row xl:justify-evenly">
       <div className="mt-8 xl:mt-0">
@@ -32,7 +36,7 @@ export default function HistoryBtnList() {
           <ul className="flex justify-around xl:gap-2">
             {data.map((item) => (
               <li key={item.id}>
-                <button onClick={()=>numitem(item.id+2)} className="focus:outline-none">
+                <button onClick={()=>{numitem(item.id+2); handleClickMove();} } className="focus:outline-none">
                   <Image
                     src={item.imgurl}
                     width={60}

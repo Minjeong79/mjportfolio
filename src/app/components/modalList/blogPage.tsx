@@ -12,7 +12,7 @@ import BlogDetail3Page from "./blog/blogDetail3page";
 export default function BlogPage() {
   return (
     <div className="flex flex-col gap-y-8">
-      <div className="flex items-end gap-2">
+      <div className="flex flex-col gap-2 xl:flex-row xl:items-end">
         <h3 className="font-bold text-3xl">이렇게 학습했습니다.</h3>
         <p className="text-base">
           한 단계씩 발전이 있는 형식의 클론 코딩 이렇게 학습했습니다.

@@ -32,7 +32,7 @@ export default function RootLayout({children,mainimg,sub,subbtn,modal}:{ childre
       
         <div className="flex flex-col gap-y-4 p-8 xl:flex-row xl:justify-between xl:p-16">
           {mainimg}
-            <div className="flex flex-col xl:w-1/2 xl:justify-evenly">
+            <div className="flex flex-col xl:w-55p xl:justify-center xl:gap-y-14">
             {sub}
             {subbtn}
             </div>
