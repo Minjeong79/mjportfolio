@@ -4,10 +4,10 @@ export default function Page() {
   return (
     <div>
       <div className="bg-white p-5 rounded-lg p-7 drop-shadow-bxl">
-        리액트(React)를 기반으로 웹 개발을 공부해온 신입 개발자 정민정 입니다.
+        신입 웹프론트 앤드 개발자 정민정 입니다.
       </div>
       <div className="bg-white p-5 mt-6 rounded-lg leading-8 p-7 drop-shadow-bxl">
-        퍼블리셔로서의 경험을 쌓으면서 웹사이트 구축에 대한 관심과 열정이<br/>
+        {/* 퍼블리셔로서의 경험을 쌓으면서 웹사이트 구축에 대한 관심과 열정이<br/>
         확고해졌기에 전향을 하게 되었습니다.<br/>
         그러나 점차 퍼블리싱만으로는 제한된
         구축 능력과 역량의 한계를 느끼게 되었습니다. <br/>
@@ -20,7 +20,9 @@ export default function Page() {
         지속적으로 향상시키는 기대를 가지고 있습니다. 더 나아가, 프론트엔드
         개발은 디자인과 기술을 융합하여 창의적으로 문제를 해결하는 과정이기도
         합니다.<br/><br/> 이를 통해 저 자신을 발전시키고 새로운 도전을 추진하며 동시에
-        대처하는 능력까지 키우는 가능성을 확신합니다.
+        대처하는 능력까지 키우는 가능성을 확신합니다. */}
+
+        내용 수정 중
       </div>
     </div>
   );
