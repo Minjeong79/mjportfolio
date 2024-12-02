@@ -14,9 +14,9 @@ export default function BlogPage() {
     <div className="flex flex-col gap-y-8">
       <div className="flex flex-col gap-2 xl:flex-row xl:items-end">
         <h3 className="font-bold text-3xl">이렇게 학습했습니다.</h3>
-        <p className="text-base">
+        {/* <p className="text-base">
           한 단계씩 발전이 있는 형식의 클론 코딩 이렇게 학습했습니다.
-        </p>
+        </p> */}
       </div>
       <p className="text-lg">
         클론 코딩은 순차적으로 자바스크립트와 타입스트립트 사용 했으며

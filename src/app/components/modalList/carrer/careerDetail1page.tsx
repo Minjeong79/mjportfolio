@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CareerDetail1Page() {
   return (
-    <section className="flex flex-col h-screen xl:gap-x-8 xl:h-96 ">
+    <section className="flex flex-col h-80vh xl:gap-x-8 xl:h-96 ">
       <div className="flex flex-col">
         <h4 className="font-bold text-xl">파인너츠(파견근무)</h4>
         <p className="text-lg">
