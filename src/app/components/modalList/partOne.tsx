@@ -36,8 +36,9 @@ export default function PartOnePage() {
               되었습니다.
             </li>
             <li>
-              커뮤니티에선 검색, 이미지 등록, 댓글 기능 등이 추가 되었습니다.
+              커뮤니티에선 검색, 이미지 등록, 댓글 기능이 추가 되었습니다.
             </li>
+            <li>댓글 알림 기능이 추가 되었습니다.</li>
           </ul>
         </div>
         <div className="mt-4 mb-4">

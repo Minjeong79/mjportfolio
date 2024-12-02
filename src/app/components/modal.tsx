@@ -45,7 +45,7 @@ export default function Modal({ children }: { children: ReactNode }) {
           setIsMounted(false);
           innum(num, false);
           dialogRef.current.close(); // 모달 닫기
-          router.back(); // 이전 페이지로 이동
+          //router.back(); // 이전 페이지로 이동
         }
       }}
     >
@@ -53,13 +53,12 @@ export default function Modal({ children }: { children: ReactNode }) {
       className="absolute top-2.5 right-2.5 z-30"
         onClick={() => {
           if (dialogRef.current) {
-            console.log(99999999999);
             document.body.style.overflow = "auto";
             setIsMounted(false);
             innum(num, false);
            
             dialogRef.current.close(); 
-            router.back(); 
+            //router.back(); 
           }
          
         }}
