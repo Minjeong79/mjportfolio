@@ -67,7 +67,7 @@ export default function PartThreePage() {
           작업 했던 컴포넌트에서 document를 사용 했던 코드를 인지 후 useRef로
           수정 하였습니다.
         </div>
-        <div className="py-5 border-t border-slate-200">
+        <div className="py-5 border-t border-slate-200  pb-28 xl:pb-0">
           <ul className="flex gap-x-6">
             <li>
               <Link

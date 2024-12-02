@@ -42,6 +42,7 @@ body {
 }
 
 .swiper-slide {
+  height: 100vh;
   display: flex;
   background: #fff;
   border: 1px solid #cfcfcf;
@@ -52,5 +53,5 @@ body {
   backface-visibility: hidden;
 }
 .swiper-pagination-bullet-active {
-  background: #222;
+  background: #222!important;
 }

@@ -58,7 +58,7 @@ export default function PartFourPage() {
           Redux 같은 별도의 상태 관리 라이브러리 없이도 간단한 상태 관리를
           수행할 수 있는 방법을 배웠습니다.
         </div>
-        <div className="py-5 border-t border-slate-200">
+        <div className="py-5 border-t border-slate-200 pb-28 xl:pb-0">
         <p className="font-bold text-base">게시판1</p>
           <ul className="flex gap-x-6">
             <li>

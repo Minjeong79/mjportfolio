@@ -18,13 +18,10 @@ export default function BlogPage() {
           한 단계씩 발전이 있는 형식의 클론 코딩 이렇게 학습했습니다.
         </p> */}
       </div>
-      <p className="text-lg">
+      {/* <p className="text-lg">
         클론 코딩은 순차적으로 자바스크립트와 타입스트립트 사용 했으며
         firebase를 통해 사용자가 google 로그인을 할 수 있도록 구현 하였습니다.
-        사용자가 로그인 후 작성하는 데이터는 firebase에 realtime database에
-        저장하여 실시간으로 데이터 추가, 수정, 삭제가 가능 하도록 구현
-        하였습니다. 카카오 광고 적용을 해보았습니다.
-      </p>
+      </p> */}
       <Swiper
         grabCursor={true}
         effect={"creative"}

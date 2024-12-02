@@ -56,7 +56,7 @@ export default function PartTwoPage() {
           알았습니다. Css를 효과적으로 작성하기 위해 Tailwind Css를
           선택하였습니다.
         </div>
-        <div className="py-5 border-t border-slate-200">
+        <div className="py-5 border-t border-slate-200 pb-28 xl:pb-0">
           <ul className="flex gap-x-6">
             <li>
               <Link

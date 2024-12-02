@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BlogDetail3Page() {
   return (
-    <section className="flex h-85vh flex-col gap-y-6 xl:h-96">
+    <section className="flex h-full pb-10 flex-col gap-y-6 xl:h-96 xl:pb-0">
       <div className="flex flex-col gap-y-3">
         <h4 className="font-bold text-xl">Todo-list 클론 코딩 Ts</h4>
         <p className="text-lg">
@@ -17,7 +17,7 @@ export default function BlogDetail3Page() {
           <li>
             TypeScript를 도입하여 코드의 타입을 명시적으로 지정함으로써 코드의
             안정성을 높였습니다.
-          </li>
+          </li> 
           <li>
             Firebase를 사용하여 데이터베이스를 관리하는 법을 학습 했습니다.
           </li>
