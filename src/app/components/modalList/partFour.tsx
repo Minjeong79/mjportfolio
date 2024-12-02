@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function PartFourPage() {
   return (
-    <div className="flex flex-col xl:flex-row xl:justify-between xl:gap-x-6">
+    <div className="flex flex-col h-screen overflow-y-scroll xl:flex-row xl:justify-between xl:gap-x-6 xl:h-auto xl:overflow-hidden">
       <video
         className="mx-auto"
         width="500"
@@ -58,7 +58,7 @@ export default function PartFourPage() {
           Redux 같은 별도의 상태 관리 라이브러리 없이도 간단한 상태 관리를
           수행할 수 있는 방법을 배웠습니다.
         </div>
-        <div className="py-5 border-t border-slate-200 pb-28 xl:pb-0">
+        <div className="py-5 border-t border-slate-200 ">
         <p className="font-bold text-base">게시판1</p>
           <ul className="flex gap-x-6">
             <li>
@@ -102,9 +102,9 @@ export default function PartFourPage() {
             </li>
           </ul>
         </div>
-        <div className="py-5" >
-        <p className="font-bold text-base">게시판2</p>
-          <ul className="flex gap-x-6">
+        <div className="py-5 pb-48 xl:pb-0">
+          <p className="font-bold text-base">게시판2</p>
+          <ul className="flex gap-x-6 ">
             <li>
               <Link
                 href="https://velog.io/@yoouug72/react-vite-typescript-tailwind-%EC%84%B8%ED%8C%85"
