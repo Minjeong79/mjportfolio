@@ -14,6 +14,7 @@ export default {
       },
       height: {
         '550': '550px',
+        '80vh' : '80vh',
         '85vh' : '85vh'
       },
       width:{

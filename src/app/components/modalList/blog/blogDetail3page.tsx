@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BlogDetail3Page() {
   return (
-    <section className="flex h-85vh flex-col gap-y-6">
+    <section className="flex h-85vh flex-col gap-y-6 xl:h-96">
       <div className="flex flex-col gap-y-3">
         <h4 className="font-bold text-xl">Todo-list 클론 코딩 Ts</h4>
         <p className="text-lg">
