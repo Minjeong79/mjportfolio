@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BlogDetail1Page() {
   return (
-    <section className="flex h-85vh flex-col gap-y-6 xl:h-96">
+    <section className="flex h-full pb-10 flex-col gap-y-6 xl:h-96 xl:pb-0" >
       <div className="flex flex-col gap-y-3">
         <h4 className="font-bold text-xl">Todo-list 원본 클론 코딩</h4>
         <p className="text-lg">
@@ -11,11 +11,11 @@ export default function BlogDetail1Page() {
         </p>
       </div>
       <div>
-        <p className="text-lg">학습 과정</p>
+        <p className="text-lg">학습 과정</p> 
         <ul className="list-disc pl-5">
           <li>Create React App을 사용하여 기본 구조를 설정했습니다.</li>
           <li>
-            Todo 항목을 추가, 삭제 및 완료하기 위해 useState를 학습했습니다.
+            Todo 항목을 추가, 삭제 및 완료하기 위해 기본적인 상태 관리 훅(useState)을 학습했습니다.
           </li>
           <li>
             React의 컴포넌트 기능을 활용하여 Todo 항목을 나타내는 방법을

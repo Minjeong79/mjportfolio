@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BlogDetail2Page() {
   return (
-    <section className="flex h-85vh flex-col gap-y-6 xl:h-96">
+    <section className="flex h-full pb-10 flex-col gap-y-6 xl:h-96 xl:pb-0">
       <div className="flex flex-col gap-y-3">
         <h4 className="font-bold text-xl">Todo-list 클론 코딩</h4>
         <p className="text-lg">
@@ -17,7 +17,7 @@ export default function BlogDetail2Page() {
           <li>
           Google 로그인을 통해 사용자가 로그인할 수 있는 기능을 구현하는 방법을 학습했습니다.
           </li>
-          <li>
+          <li> 
           카카오 광고도 직접 달아 보았습니다.
           </li>
           <li>기능들을 추가함으로써 Todo List를 보다 효과적으로 개선 하였습니다.</li>
