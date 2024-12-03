@@ -13,7 +13,7 @@ export default function PartFourPage() {
         muted
       >
         <source
-          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/video/mumnext.mp4"
+          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/video/board.mp4"
           type="video/mp4"
         />
       </video>
@@ -59,7 +59,7 @@ export default function PartFourPage() {
           수행할 수 있는 방법을 배웠습니다.
         </div>
         <div className="py-5 border-t border-slate-200 ">
-        <p className="font-bold text-base">게시판1</p>
+          <p className="font-bold text-base">게시판1</p>
           <ul className="flex gap-x-6">
             <li>
               <Link
