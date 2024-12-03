@@ -14,7 +14,7 @@ export default function PartTwoPage() {
         muted
       >
         <source
-          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/video/mumnext.mp4"
+          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/video/mumreact.mp4"
           type="video/mp4"
         />
       </video>
@@ -85,7 +85,10 @@ export default function PartTwoPage() {
               </Link>
             </li>
             <li>
-              <Link href="https://mummum-rust.vercel.app/" className="flex items-center">
+              <Link
+                href="https://mummum-rust.vercel.app/"
+                className="flex items-center"
+              >
                 <Image
                   src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn7.png"
                   width={40}
