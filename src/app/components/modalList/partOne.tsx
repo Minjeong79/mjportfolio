@@ -89,7 +89,7 @@ export default function PartOnePage() {
             </li>
             <li>
               <Link
-                href="https://mjportfolio-three.vercel.app/"
+                href="https://mumnext.vercel.app/"
                 className="flex items-center"
               >
                 <Image
