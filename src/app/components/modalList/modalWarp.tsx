@@ -11,8 +11,7 @@ import PartTwoPage from "./partTwo";
 
 export default function ModalWrapPage() {
   const { num } = useStoreModal();
-  console.log(`${num}모달 화면이에요`);
-  //w-[80vw] h-[900px] p-12 
+  //w-[80vw] h-[900px] p-12
   return (
     <div className="p-5 pb-16 bg-[#f9f9fd] h-screen xl:w-[80vw] xl:h-[900px] xl:p-12 xl:overflow-y-hidden ">
       {num === 0 ? (

@@ -49,15 +49,23 @@ export default function PartOnePage() {
           <p className="font-bold mt-2 text-base">상태관리 선택</p>
           기존 프로젝트와는 다르게 Recoil 사용했습니다.
           <p className="font-bold mt-2 text-base">App Router</p>
-          최신 트렌드에 맞춰 작업하기 위해 App Router를 선택했습니다. 
-          서버 컴포넌트와 클라이언트 컴포넌트를 혼합하여 사용하는 경험을
-          쌓을 수 있었습니다. 다양한 라우터 방식을 경험하며 더 나은 유지보수성과
-          성능 최적화를 추구하고자 했습니다.
+          최신 트렌드에 맞춰 작업하기 위해 App Router를 선택했습니다. 서버
+          컴포넌트와 클라이언트 컴포넌트를 혼합하여 사용하는 경험을 쌓을 수
+          있었습니다. 다양한 라우터 방식을 경험하며 더 나은 유지보수성과 성능
+          최적화를 추구하고자 했습니다.
+          <br />
+          <br />
+          테스트 계정
+          <br /> ID : minj92@kakao.com <br />
+          PW : fkdnxj0906!!
         </div>
-        <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0" >
+        <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0">
           <ul className="flex gap-x-6">
             <li>
-              <Link href="https://yoouug.tistory.com/category/%EB%A9%88%EB%A9%88-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%28next.js%292" className="flex items-center">
+              <Link
+                href="https://yoouug.tistory.com/category/%EB%A9%88%EB%A9%88-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%28next.js%292"
+                className="flex items-center"
+              >
                 <Image
                   src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn5.png"
                   width={50}
@@ -67,7 +75,10 @@ export default function PartOnePage() {
               </Link>
             </li>
             <li>
-              <Link href="https://github.com/Minjeong79/mumnext" className="flex items-center">
+              <Link
+                href="https://github.com/Minjeong79/mumnext"
+                className="flex items-center"
+              >
                 <Image
                   src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn6.png"
                   width={40}
@@ -77,7 +88,10 @@ export default function PartOnePage() {
               </Link>
             </li>
             <li>
-              <Link href="" className="flex items-center">
+              <Link
+                href="https://mjportfolio-three.vercel.app/"
+                className="flex items-center"
+              >
                 <Image
                   src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/icon/btn7.png"
                   width={40}
