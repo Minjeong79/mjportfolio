@@ -6,7 +6,7 @@ import { BtnType, CoinType } from "@/lib/type";
 import { useStore, useStoreModal } from "../store/store";
 
 export default function HistoryBtnList() {
-  const {numitem } = useStore();
+  const { numitem } = useStore();
   const { num, value, innum } = useStoreModal();
 
   const [data, setData] = useState<CoinType[]>([]);
@@ -24,10 +24,9 @@ export default function HistoryBtnList() {
     fetchCoinBox();
   }, []);
 
-  const handleClickMove = ()=>{
+  const handleClickMove = () => {
     window.scrollTo(0, 0);
-    console.log('here!!');
-  }
+  };
   return (
     <div className="flex flex-col gap-8 xl:flex-row xl:justify-evenly">
       <div className="mt-8 xl:mt-0">
@@ -36,7 +35,13 @@ export default function HistoryBtnList() {
           <ul className="flex justify-around xl:gap-2">
             {data.map((item) => (
               <li key={item.id}>
-                <button onClick={()=>{numitem(item.id+2); handleClickMove();} } className="focus:outline-none">
+                <button
+                  onClick={() => {
+                    numitem(item.id + 2);
+                    handleClickMove();
+                  }}
+                  className="focus:outline-none"
+                >
                   <Image
                     src={item.imgurl}
                     width={60}
@@ -52,10 +57,13 @@ export default function HistoryBtnList() {
       <div className="">
         <p className="mb-2 text-center">경력 / 기술 스택 / 블로그 </p>
         <div className="bg-white p-3 rounded-lg">
-        <ul className="flex justify-around xl:gap-2">
-        {dataBtn.map((item) => (
-              <li key={item.id} >
-                <button onClick={()=>innum(item.id, item.value)} className="focus:outline-none">
+          <ul className="flex justify-around xl:gap-2">
+            {dataBtn.map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => innum(item.id, item.value)}
+                  className="focus:outline-none"
+                >
                   <Image
                     src={item.imgurl}
                     width={60}
@@ -65,7 +73,7 @@ export default function HistoryBtnList() {
                 </button>
               </li>
             ))}
-        </ul>
+          </ul>
         </div>
       </div>
     </div>
