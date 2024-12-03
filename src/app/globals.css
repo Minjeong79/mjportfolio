@@ -2,25 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  -webkit-font-smoothing: antialiased; /* 텍스트를 부드럽게 렌더링 */
-  -moz-osx-font-smoothing: grayscale; /* macOS 환경에서 그레이스케일 렌더링 */
-  text-rendering: optimizeLegibility; /* 글자 선명도 향상 */
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  /* 텍스트를 부드럽게 렌더링 */
+  -moz-osx-font-smoothing: grayscale;
+  /* macOS 환경에서 그레이스케일 렌더링 */
+  text-rendering: optimizeLegibility;
+  /* 글자 선명도 향상 */
 }
 
 
 @font-face {
   font-family: "SejonghospitalLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalLight.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalLight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SejonghospitalBold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -31,10 +33,12 @@ html, body {
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "SejonghospitalLight", sans-serif;
   color: #222;
 }
+
 .swiper {
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +46,7 @@ body {
 }
 
 .swiper-slide {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   background: #fff;
   border: 1px solid #cfcfcf;
@@ -52,6 +56,7 @@ body {
   text-rendering: geometricPrecision;
   backface-visibility: hidden;
 }
+
 .swiper-pagination-bullet-active {
-  background: #222!important;
+  background: #222 !important;
 }

@@ -17,7 +17,7 @@ export default function BlogDetail3Page() {
           <li>
             TypeScript를 도입하여 코드의 타입을 명시적으로 지정함으로써 코드의
             안정성을 높였습니다.
-          </li> 
+          </li>
           <li>
             Firebase를 사용하여 데이터베이스를 관리하는 법을 학습 했습니다.
           </li>
