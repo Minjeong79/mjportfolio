@@ -36,7 +36,7 @@ export default function PartTwoPage() {
           <h4 className="font-bold text-xl">반려견 일기(React 구현)</h4>
           <p className="text-base font-bold mt-6">기술 스택</p>
           <ul className="flex flex-row flex-wrap justify-between">
-            {data?.map((item) => (
+            {data.map((item) => (
               <li key={item.id}>
                 <Image
                   src={item.imgurl}
@@ -80,7 +80,7 @@ export default function PartTwoPage() {
         </div>
         <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0">
         <p className="text-sm">아이콘 클릭시 관련 된 주소로 이동 됩니다.</p>
-          <ul className="flex gap-x-6">
+        <ul className="flex gap-x-6 mt-4">
             <li>
               <Link
                 href="https://yoouug.tistory.com/category/%EB%A9%88%EB%A9%88-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%28React%291"
