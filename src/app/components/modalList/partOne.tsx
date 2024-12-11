@@ -1,7 +1,22 @@
+"use client";
+import { oneDB } from "@/lib/db";
+import { IconType } from "@/lib/type";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function PartOnePage() {
+  const [data, setData] = useState<IconType[]>([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const db = await oneDB();
+      if (db) {
+        setData(db);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="flex flex-col h-screen overflow-y-scroll xl:flex-row xl:justify-between xl:gap-x-6 xl:h-auto xl:overflow-hidden">
       <video
@@ -20,39 +35,49 @@ export default function PartOnePage() {
       </video>
       <div className=" mt-4 flex flex-col justify-around xl:h-550 xl:overflow-y-scroll">
         <div>
-          <h4 className="font-bold text-xl">반려견 일기</h4>
-          <p className="text-sm mt-4">
-            Nextjs / Typescript / Supabase / Recoil / Tailwind
-          </p>
-        </div>
-        <div>
-          <p className="text-base">프로젝트 목표 : 반려견 일기 / 커뮤니티</p>
-          <p className="text-base font-bold mt-4">개발 과정</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>Nextjs 사용하여 기본 구조를 설정했습니다.</li>
-            <li>상태 관리에는 Recoil을 사용했습니다.</li>
-            <li>
-              React로 만든 프로젝트에서 UI정리와 커뮤니티와 프로필이 추가
-              되었습니다.
-            </li>
-            <li>
-              커뮤니티에선 검색, 이미지 등록, 댓글 기능이 추가 되었습니다.
-            </li>
-            <li>댓글 알림 기능이 추가 되었습니다.</li>
+          <h4 className="font-bold text-xl">반려견 일기(Nexjs 구현)</h4>
+          <p className="text-base font-bold mt-6">기술 스택</p>
+          <ul className="flex flex-row flex-wrap justify-between">
+            {data?.map((item) => (
+              <li key={item.id}>
+                <Image
+                  src={item.imgurl}
+                  width={50}
+                  height={50}
+                  alt={item.name}
+                />
+              </li>
+            ))}
           </ul>
         </div>
-        <div className="mt-4 mb-4">
-          <p className="font-bold text-base">개발도구 선택</p>
-          Next.js를 접하며 SEO, SSR, SSG 등 다양한 기능을 제공한다는 점에서
-          효율성을 경험했습니다. 라우팅과 이미지 최적화 같은 편리한 기능을 통해
-          새로운 프로젝트를 Next.js로 구현했습니다.
-          <p className="font-bold mt-2 text-base">상태관리 선택</p>
-          기존 프로젝트와는 다르게 Recoil 사용했습니다.
-          <p className="font-bold mt-2 text-base">App Router</p>
-          최신 트렌드에 맞춰 작업하기 위해 App Router를 선택했습니다. 서버
-          컴포넌트와 클라이언트 컴포넌트를 혼합하여 사용하는 경험을 쌓을 수
-          있었습니다. 다양한 라우터 방식을 경험하며 더 나은 유지보수성과 성능
-          최적화를 추구하고자 했습니다.
+        <div>
+          <p className="text-base font-bold mt-6">개발 과정</p>
+          <ul className="list-disc pl-5 mt-2">
+            <li>Nextjs App Router 사용</li>
+            <li>상태 관리에는 Recoil을 사용</li>
+            <li>
+              카카오 로그인, Supabase를 사용, 공공 api 활용, 카카오 지도 api
+              활용
+            </li>
+            <li>
+              React로 만든 기존 프로젝트에서 UI정리와 커뮤니티와 프로필이 추가
+            </li>
+            <li>커뮤니티에선 검색, 이미지 등록, 댓글 기능이 추가</li>
+            <li>댓글 알림 기능이 추가 </li>
+          </ul>
+        </div>
+        <div className="mt-6 mb-4">
+          <p className="font-bold text-base">핵심 포인트 Nextjs</p>
+          React에서는 React Router를 사용해 라우팅을 구성했지만, Next.js는 파일
+          기반의 라우팅 시스템을 제공해 추가적인 설정 없이도 직관적으로 페이지를
+          구성할 수 있었습니다. 이로 인해 개발 속도가 빨라지고 유지보수도
+          쉬워졌습니다.
+          <p className="font-bold text-base mt-6">핵심 포인트 Recoil</p>
+          기존에 사용했던 Redux와 비교했을 때, Recoil은 사용 방법이 훨씬
+          간결하고 직관적이었습니다. Redux는 보일러플레이트 코드가 많아 설정과
+          관리 과정이 복잡한 반면, Recoil은 이러한 과정을 크게 단축시켜 개발
+          시간을 절약할 수 있었습니다. 또한, Recoil의 상태 관리는 더 직관적으로
+          구성되어 있어 코드를 읽고 이해하기가 훨씬 쉬웠습니다.
           <br />
           <br />
           테스트 계정
@@ -60,7 +85,8 @@ export default function PartOnePage() {
           PW : fkdnxj0906!!
         </div>
         <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0">
-          <ul className="flex gap-x-6">
+          <p className="text-sm">아이콘 클릭시 관련 된 주소로 이동 됩니다.</p>
+          <ul className="flex gap-x-6 mt-4">
             <li>
               <Link
                 href="https://yoouug.tistory.com/category/%EB%A9%88%EB%A9%88-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%28next.js%292"

@@ -1,12 +1,13 @@
+import HistoryBtnList from "../../components/historyBtnList";
 import History from "../../components/historyBtnList";
 
 export default function Page() {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <div className="bg-white p-5 rounded-lg p-7 drop-shadow-bxl">
         신입 웹프론트 앤드 개발자 정민정 입니다.
       </div>
-      <div className="bg-white p-5 mt-6 rounded-lg leading-8 p-7 drop-shadow-bxl">
+      <div className="bg-white p-5 mt-4 rounded-lg leading-8 p-7 drop-shadow-bxl">
         퍼블리셔로서 웹 프로젝트를 작업하며, 프론트엔드 개발에 대한 흥미와
         열정을 발견했습니다. 디자인과 사용자 경험이 결합된 인터랙티브한 웹
         페이지를 만들어보고 싶다는 욕심이 생겼고, 이를 계기로 본격적으로
@@ -23,6 +24,7 @@ export default function Page() {
         이루었습니다.<br/><br/> 앞으로도 최신 기술 트렌드를 끊임없이 학습하며, 사용자에게
         더 나은 가치를 제공할 수 있는 개발자로 성장하겠습니다. 
       </div>
+      <HistoryBtnList/>
     </div>
   );
 }

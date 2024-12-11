@@ -18,30 +18,34 @@ export const metadata: Metadata = {
   description: "반갑습니다 프론트 개발자 정민정 입니다.",
 };
 
-export default function RootLayout({children,mainimg,sub,subbtn,modal}:{ children: ReactNode;
+export default function RootLayout({
+  children,
+  mainimg,
+  sub,
+  subbtn,
+  modal,
+}: {
+  children: ReactNode;
   mainimg: ReactNode;
   sub: ReactNode;
   subbtn: ReactNode;
-  modal: ReactNode;}
-) {
+  modal: ReactNode;
+}) {
   return (
     <html lang="kr">
-      <body
-        className={`bg-[#D9DEFC] w-full h-full`}
-      >
-      
+      <body className={`bg-[#D9DEFC] w-full h-full`}>
         <div className="flex flex-col gap-y-4 p-8 xl:flex-row xl:justify-between xl:p-16">
-          {mainimg}
-            <div className="flex flex-col xl:w-55p xl:justify-center xl:gap-y-14">
-            {sub}
+          <div className="flex flex-col xl:gap-y-4 ">
+            {mainimg}
             {subbtn}
-            </div>
-           
           </div>
-          {modal}
-          <div id="modal_root"></div>
+          <div className="flex flex-col mt-8 xl:mt-0 xl:w-55p xl:justify-around ">
+            {sub}
+          </div>
+        </div>
+        {modal}
+        <div id="modal_root"></div>
       </body>
     </html>
   );
 }
-

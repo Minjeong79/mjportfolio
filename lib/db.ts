@@ -41,3 +41,13 @@ export async function lIconBox() {
 
   return data;
 }
+
+export async function oneDB() {
+  let { data, error } = await supabase.from("onetable").select("*");
+  if (error) {
+    throw error;
+  }
+
+  return data;
+}
+
