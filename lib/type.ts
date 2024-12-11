@@ -8,6 +8,7 @@ export interface BtnType{
     id:number;
     imgurl:string;
     value:boolean;
+    name:string;
 }
 
 export interface MainItemType{

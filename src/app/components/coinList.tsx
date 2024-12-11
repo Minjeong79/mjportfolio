@@ -5,7 +5,7 @@ import { btnBox, coinBox } from "@/lib/db";
 import { BtnType, CoinType } from "@/lib/type";
 import { useStore, useStoreModal } from "../store/store";
 
-export default function HistoryBtnList() {
+export default function ConinList() {
   const { numitem } = useStore();
   const { num, value, innum } = useStoreModal();
 
@@ -28,23 +28,25 @@ export default function HistoryBtnList() {
     window.scrollTo(0, 0);
   };
   return (
-      <div className="">
-        {/* <p className="mb-2 text-center">경력 / 기술 스택 / 블로그 </p> */}
+      <div className="mt-3 xl:mt-0">
+        <p className="mb-2 text-center">동전을 선택해 주세요!</p>
         <div className="bg-white p-3 rounded-lg drop-shadow-bxl">
           <ul className="flex justify-around xl:gap-2">
-            {dataBtn.map((item) => (
+            {data.map((item) => (
               <li key={item.id}>
                 <button
-                  onClick={() => innum(item.id, item.value)}
+                  onClick={() => {
+                    numitem(item.id + 2);
+                    handleClickMove();
+                  }}
                   className="focus:outline-none"
                 >
                   <Image
                     src={item.imgurl}
                     width={60}
                     height={60}
-                    alt="아이콘"
+                    alt="동전 이미지"
                   />
-                  <p className="text-center mt-2.5">{item.name}</p>
                 </button>
               </li>
             ))}
