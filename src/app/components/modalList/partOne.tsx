@@ -24,7 +24,7 @@ export default function PartOnePage() {
         width="500"
         height="500"
         controls
-        autoPlay
+        // autoPlay
         loop
         muted
       >
@@ -33,6 +33,15 @@ export default function PartOnePage() {
           type="video/mp4"
         />
       </video>
+      <div className="animate-bounce xl:hidden">
+        <Image
+        className="mx-auto"
+          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/btn/down-icon.png"
+          width={32}
+          height={31}
+          alt="아래로 스크롤 아이콘"
+        />
+      </div>
       <div className=" mt-4 flex flex-col justify-around xl:h-550 xl:overflow-y-scroll">
         <div>
           <h4 className="font-bold text-xl">반려견 일기(Nexjs 구현)</h4>
@@ -73,8 +82,7 @@ export default function PartOnePage() {
           구성할 수 있었습니다. 이로 인해 개발 속도가 빨라지고 유지보수도
           쉬워졌습니다.
           <p className="font-bold text-base mt-6">핵심 포인트 Recoil</p>
-          기존에 사용했던 Redux와 비교했을 때, Recoil은 사용 방법이 훨씬
-          간결하고 직관적이었습니다. Redux는 보일러플레이트 코드가 많아 설정과
+          기존에 사용했던 Redux와 비교했을 때 Redux는 설정과
           관리 과정이 복잡한 반면, Recoil은 이러한 과정을 크게 단축시켜 개발
           시간을 절약할 수 있었습니다. 또한, Recoil의 상태 관리는 더 직관적으로
           구성되어 있어 코드를 읽고 이해하기가 훨씬 쉬웠습니다.
