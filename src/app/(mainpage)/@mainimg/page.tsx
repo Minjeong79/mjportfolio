@@ -5,12 +5,12 @@ export default function Page() {
   return (
     <div className="mx-auto relative  ">
       <Image
-        src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/main/main-img.gif"
+        src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/main/main-img-re.gif"
         width={580}
         height={680}
         alt="뽑기 이미지"
       />
-      
+
       <CounterItem />
     </div>
   );

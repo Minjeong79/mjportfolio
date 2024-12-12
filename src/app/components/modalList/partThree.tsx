@@ -33,14 +33,14 @@ export default function PartThreePage() {
       </video>
       <div className="animate-bounce xl:hidden">
         <Image
-        className="mx-auto"
+          className="mx-auto"
           src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/btn/down-icon.png"
           width={32}
           height={31}
           alt="아래로 스크롤 아이콘"
         />
       </div>
-      <div className="xl:h-550 mt-4 flex flex-col justify-around xl:overflow-y-scroll">
+      <div className=" mt-4 flex flex-col justify-around xl:h-80vh xl:overflow-y-scroll">
         <div>
           <h4 className="font-bold text-xl">미니 게임(PC Ver)</h4>
           <p className="text-base font-bold mt-6">기술 스택</p>
