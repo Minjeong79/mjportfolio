@@ -44,7 +44,7 @@ export default function PartThreePage() {
         <div>
           <h4 className="font-bold text-xl">미니 게임(PC Ver)</h4>
           <p className="text-base font-bold mt-6">기술 스택</p>
-          <ul className="flex flex-row flex-wrap justify-between">
+          <ul className="flex flex-row flex-wrap mt-2 justify-between xl:w-2/4">
             {data.map((item) => (
               <li key={item.id}>
                 <Image

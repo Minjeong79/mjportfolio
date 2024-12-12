@@ -46,7 +46,7 @@ export default function PartOnePage() {
         <div>
           <h4 className="font-bold text-xl">반려견 일기(Nexjs 구현)</h4>
           <p className="text-base font-bold mt-6">기술 스택</p>
-          <ul className="flex flex-row flex-wrap justify-between">
+          <ul className="flex flex-row flex-wrap mt-2 justify-between xl:w-2/4">
             {data?.map((item) => (
               <li key={item.id}>
                 <Image

@@ -44,7 +44,7 @@ export default function PartFourPage() {
         <div>
           <h4 className="font-bold text-xl">게시판</h4>
           <p className="text-base font-bold mt-6">기술 스택</p>
-          <ul className="flex flex-row flex-wrap justify-between">
+          <ul className="flex flex-row flex-wrap mt-2 justify-between xl:w-2/4">
             {data?.map((item) => (
               <li key={item.id}>
                 <Image
@@ -83,7 +83,7 @@ export default function PartFourPage() {
           Toolkit에 비해 진입장벽이 낮은 편입니다. 그러나 TypeScript와 함께
           사용할 경우, 초기값을 타입에 맞게 정확히 설정해야 한다는 점을 유의해야
           하는 것을 알았습니다.
-          <div className="py-5 border-t border-slate-200 ">
+          <div className="mt-4 py-5 border-t border-slate-200">
             <p className="text-sm">아이콘 클릭시 관련 된 주소로 이동 됩니다.</p>
             <p className="font-bold text-base mt-4">게시판1</p>
             <ul className="flex gap-x-6">

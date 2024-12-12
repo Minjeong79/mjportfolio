@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CareerDetail4Page() {
   return (
-    <section className="flex flex-col h-full pb-10 xl:w-full xl:gap-x-8 xl:h-96 xl:pb-0">
+    <section className="flex flex-col h-full xl:w-full xl:gap-x-8 xl:pb-0">
       <div className="flex flex-col xl:flex-row xl:gap-x-8">
         <div className="flex flex-col">
           <h4 className="font-bold text-xl">홈매니지먼트 수가</h4>
