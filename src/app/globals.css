@@ -39,6 +39,10 @@ body {
   color: #222;
 }
 
+dialog::backdrop {
+  background: #222;
+  opacity: 0.5;
+} 
 .swiper {
   width: 100%;
   -webkit-font-smoothing: antialiased;
