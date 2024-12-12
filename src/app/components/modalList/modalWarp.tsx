@@ -13,7 +13,7 @@ export default function ModalWrapPage() {
   const { num } = useStoreModal();
 
   return (
-    <div className="p-5 pb-16 bg-[#f9f9fd] h-screen overflow-y-scroll xl:w-[80vw] xl:h-[900px] xl:p-12 xl:overflow-y-hidden ">
+    <div className="p-5 pb-16 bg-[#f9f9fd] h-screen overflow-y-scroll xl:w-[80vw] xl:h-[900px] xl:p-12 xl:overflow-y-hidden xl:p-7">
       {num === 0 ? (
         <CareerPage />
       ) : num === 1 ? (

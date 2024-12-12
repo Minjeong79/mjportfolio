@@ -46,7 +46,6 @@ body {
 }
 
 .swiper-slide {
-  /* height: 100vh; */
   display: flex;
   background: #fff;
   border: 1px solid #cfcfcf;

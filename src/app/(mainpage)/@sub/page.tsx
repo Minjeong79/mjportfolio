@@ -4,8 +4,8 @@ import History from "../../components/historyBtnList";
 export default function Page() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="bg-white p-5 rounded-lg p-7 drop-shadow-bxl">
-        신입 웹프론트 앤드 개발자 정민정 입니다.
+      <div className="bg-white p-5 rounded-lg p-7 drop-shadow-bxl font-bold text-center">
+        신입 웹프론트 앤드 개발자 정민정!
       </div>
       <div className="bg-white p-5 mt-4 rounded-lg leading-8 p-7 drop-shadow-bxl">
         퍼블리셔로서 웹 프로젝트를 작업하며, 프론트엔드 개발에 대한 흥미와

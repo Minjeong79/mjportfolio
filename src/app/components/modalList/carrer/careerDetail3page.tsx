@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CareerDetail3Page() {
   return (
-    <section className="flex flex-col h-full pb-10 xl:w-full xl:gap-x-8 xl:h-96 xl:overflow-y-scroll xl:pb-0">
+    <section className="flex flex-col h-full xl:w-full xl:gap-x-8 xl:pb-0">
       <div className="flex flex-col">
         <h4 className="font-bold text-xl">디자인플러스와우</h4>
         <p className="text-lg">(2018.06-2019.09)</p>
@@ -16,7 +16,7 @@ export default function CareerDetail3Page() {
           <br />
           <br />
           상품 카테고리에 따라 레이아웃을 구성하여 사용자들이 원하는 상품을 쉽게 찾을
-          수 있도록 했습니다. 상품 설명과 가격을 명확하게 표시하여 사용자들이
+          수 있도록 했습니다.상품 설명과 가격을 명확하게 표시하여 사용자들이
           신속하고 효율적으로 정보를 파악할 수 있도록 했습니다.
           <Image
             src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/history/history-img2.png"
