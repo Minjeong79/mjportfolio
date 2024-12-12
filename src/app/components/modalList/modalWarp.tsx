@@ -11,9 +11,9 @@ import PartTwoPage from "./partTwo";
 
 export default function ModalWrapPage() {
   const { num } = useStoreModal();
-  //w-[80vw] h-[900px] p-12
+
   return (
-    <div className="p-5 pb-16 bg-[#f9f9fd] h-screen xl:w-[80vw] xl:h-[900px] xl:p-12 xl:overflow-y-hidden ">
+    <div className="p-5 pb-16 bg-[#f9f9fd] h-screen overflow-y-scroll xl:w-[80vw] xl:h-[900px] xl:p-12 xl:overflow-y-hidden ">
       {num === 0 ? (
         <CareerPage />
       ) : num === 1 ? (

@@ -22,7 +22,7 @@ export default function PartTwoPage() {
         width="500"
         height="500"
         controls
-        autoPlay
+        // autoPlay
         loop
         muted
       >
@@ -31,6 +31,15 @@ export default function PartTwoPage() {
           type="video/mp4"
         />
       </video>
+      <div className="animate-bounce xl:hidden">
+        <Image
+        className="mx-auto"
+          src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/btn/down-icon.png"
+          width={32}
+          height={31}
+          alt="아래로 스크롤 아이콘"
+        />
+      </div>
       <div className=" mt-4 flex flex-col justify-around xl:h-550 xl:overflow-y-scroll">
         <div>
           <h4 className="font-bold text-xl">반려견 일기(React 구현)</h4>

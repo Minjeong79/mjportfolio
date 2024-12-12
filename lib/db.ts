@@ -62,6 +62,16 @@ export async function twoDB() {
 
 export async function threeDB() {
   let { data, error } = await supabase.from("threetable").select("*");
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+}
+
+export async function fourDB() {
+  let { data, error } = await supabase.from("fourtable").select("*");
   if (error) {
     throw error;
   }
