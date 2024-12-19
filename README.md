@@ -30,7 +30,6 @@
             <br><br>
             Redux Toolkit, Context API처럼 설정이 복잡하지 않아 초기 설정과 러닝 커브가 낮았습니다.
       </li>
-
       <li>
             Parallel Routes 사용<br>
             이번 프로젝트에서는 Next.js의 Parallel Routes를 활용하여 UI를 구현해 보았습니다.<br>
