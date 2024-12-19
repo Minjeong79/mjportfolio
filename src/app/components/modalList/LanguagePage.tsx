@@ -18,7 +18,7 @@ export default function LanguagePage() {
   }, []);
   return (
     <div>
-      <div className="flex flex-col h-screen pb-48 overflow-y-scroll gap-y-8 xl:gap-y-12 xl:h-auto xl:pb-0 xl:overflow-hidden">
+      <div className="flex flex-col h-screen pb-40 overflow-y-scroll gap-y-8 xl:gap-y-12 xl:h-auto xl:pb-0 xl:overflow-hidden">
         <h3 className="font-bold text-3xl">기술 스택</h3>
         <div className="flex flex-col gap-y-4">
           <h4 className="text-2xl">라이브러리</h4>

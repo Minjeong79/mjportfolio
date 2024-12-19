@@ -16,7 +16,9 @@ export default function CareerPage() {
     <div className="flex flex-col gap-y-8">
       <div className="flex flex-col gap-2 xl:items-end xl:flex-row ">
         <h3 className="font-bold text-3xl">경력</h3>
-        <p className="text-base">웹디자이너-퍼블리셔로써 쌓아온 이야기</p>
+        <p className="hidden text-base xl:block">
+          웹디자이너-퍼블리셔로써 쌓아온 이야기
+        </p>
       </div>
       <div>
         <div className="animate-pulse flex justify-end mb-2 xl:hidden">
