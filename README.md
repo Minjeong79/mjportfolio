@@ -105,6 +105,7 @@ next.config.ts
 
 <h3>페이지 별 주요 기능</h3>
 <h4>[ 메인 페이지 ] </h4>
+<img src="https://github.com/user-attachments/assets/7e75d884-cd92-4a1b-a77d-6dfe05b76c5b" alt="메인 페이지"/>
 <ul>
       <li>뽑기 이미지 아래 코인을 클릭시 캡슐 이미지 출력 됩니다.</li>
       <li>캡슐 이미지 클릭시 만든 프로젝트의 내용의 모달이 출력 됩니다.</li>
