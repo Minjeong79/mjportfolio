@@ -30,7 +30,7 @@ export default function HistoryBtnList() {
   return (
       <div className="">
         {/* <p className="mb-2 text-center">경력 / 기술 스택 / 블로그 </p> */}
-        <div className="bg-white p-3 rounded-lg drop-shadow-bxl">
+        <div className="bg-[#e4e4ef] p-3 rounded-lg">
           <ul className="flex justify-around xl:gap-2">
             {dataBtn.map((item) => (
               <li key={item.id}>

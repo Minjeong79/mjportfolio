@@ -20,6 +20,7 @@ export default function CounterItem() {
     };
     fetchData();
   }, [count]);
+  console.log(`${count} 여기는 아이템 페이지`);
   return (
     <div className="absolute inset-x-0 text-center bottom-7 animate-bounce">
       {item.map((item) => (

@@ -4,6 +4,7 @@ import { useStoreModal } from "../../store/store";
 import BlogPage from "./blogPage";
 import CareerPage from "./careerPage";
 import LanguagePage from "./LanguagePage";
+import PartFivePage from "./partFive";
 import PartFourPage from "./partFour";
 import PartOnePage from "./partOne";
 import PartThreePage from "./partThree";
@@ -26,8 +27,10 @@ export default function ModalWrapPage() {
         <PartTwoPage />
       ) : num === 5 ? (
         <PartThreePage />
-      ) : (
+      ) : num === 6 ? (
         <PartFourPage />
+      ) : (
+        <PartFivePage />
       )}
     </div>
   );

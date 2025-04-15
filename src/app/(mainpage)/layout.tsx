@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="kr">
-      <body className={`bg-[#D9DEFC] w-full h-full`}>
+      <body className={`bg-[#f8f7fc] w-full h-full`}>
         <div className="flex flex-col gap-y-4 p-8 xl:flex-row xl:justify-between xl:p-16">
           <div className="flex flex-col xl:gap-y-4 ">
             {mainimg}
