@@ -4,7 +4,7 @@ import History from "../../components/historyBtnList";
 export default function Page() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="bg-[#e4e4ef] p-5 rounded-lg p-7 font-bold text-center">
+      <div className="bg-[#e4e4ef] p-5 rounded-full p-7 font-bold text-center">
         #프론트앤드 #React #Nextjs #성장중 #정민정 #신입
       </div>
       <div className="bg-[#e4e4ef] p-5 mt-4 rounded-lg leading-8 p-7">

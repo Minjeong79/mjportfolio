@@ -65,31 +65,25 @@ export default function PartFivePage() {
             <li>Nextjs App Router 사용</li>
             <li>상태 관리에는 Recoil을 사용</li>
             <li>
-              카카오 로그인, Supabase를 사용, 공공 api 활용, 카카오 지도 api
-              활용
+              카카오 로그인, Supabase를 사용, platform.openai
             </li>
-            <li>
-              React로 만든 기존 프로젝트에서 UI정리와 커뮤니티와 프로필이 추가
-            </li>
-            <li>커뮤니티에선 검색, 이미지 등록, 댓글 기능이 추가</li>
-            <li>댓글 알림 기능이 추가 </li>
           </ul>
         </div>
         <div className="mt-6 mb-4">
-          <p className="font-bold text-base">핵심 포인트 Nextjs</p>
-          React에서는 React Router를 사용해 라우팅을 구성했지만, Next.js는 파일
-          기반의 라우팅 시스템을 제공해 추가적인 설정 없이도 직관적으로 페이지를
-          구성할 수 있었습니다. 이로 인해 개발 속도가 빨라지고 유지보수도
-          쉬워졌습니다.
-          <p className="font-bold text-base mt-6">핵심 포인트 Recoil</p>
-          기존에 사용했던 Redux와 비교했을 때 Redux는 설정과 관리 과정이 복잡한
-          반면, Recoil은 이러한 과정을 크게 단축시켜 개발 시간을 절약할 수
-          있었습니다. 또한, Recoil의 상태 관리는 더 직관적으로 구성되어 있어
-          코드를 읽고 이해하기가 훨씬 쉬웠습니다.
+          <p className="font-bold text-base">Platform.OpenAI</p>
+          서버 컴포넌트에서만 사용할 수 있기 때문에,클라이언트와의 역할 분리를 명확히 해야 했습니다.
+          어떤 데이터를 서버에서 처리하고, 어떤 데이터를 클라이언트로 전달할지를 명확히 나누는 설계가 필수였습니다.
+          작업을 하면서 설계의 중요성을 알게 되었습니다.
+          <p className="font-bold text-base mt-6">보안 키 관리 API Key</p>
+          절대 클라이언트에 노출되어선 안 되기 때문에,
+          서버에서만 접근할 수 있도록 환경 변수로 안전하게 관리했습니다.
+          이 과정에서 키를 어떻게 구조적으로 숨길지, 어떤 방식으로 안전하게 활용할지에 대한 이해도 함께 쌓을 수 있었습니다.
           <br />
           <br />
-          테스트 계정
-          <br /> ID : minj92@kakao.com <br />
+          테스트 계정<br />
+          첫 로그인 후 12시간 이후에 접속 해주세요
+          <p className="text-sm">(인증 문제로 인해 12시간 이후에 확인 가능합니다)</p>
+          ID : minj92@kakao.com <br />
           PW : fkdnxj0906!!
         </div>
         <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0">
@@ -97,7 +91,7 @@ export default function PartFivePage() {
           <ul className="flex gap-x-6 mt-4">
             <li>
               <Link
-                href="https://yoouug.tistory.com/category/%EB%A9%88%EB%A9%88-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%28next.js%292"
+                href="https://yoouug.tistory.com/category/ai%20%EC%B1%84%ED%8C%85"
                 className="flex items-center"
               >
                 <Image
@@ -110,7 +104,7 @@ export default function PartFivePage() {
             </li>
             <li>
               <Link
-                href="https://github.com/Minjeong79/mumnext"
+                href="https://github.com/Minjeong79/chat"
                 className="flex items-center"
               >
                 <Image
@@ -123,7 +117,7 @@ export default function PartFivePage() {
             </li>
             <li>
               <Link
-                href="https://mumnext.vercel.app/"
+                href="https://ai-chat-gamma-hazel.vercel.app/"
                 className="flex items-center"
               >
                 <Image
