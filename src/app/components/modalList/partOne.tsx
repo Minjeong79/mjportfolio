@@ -88,8 +88,10 @@ export default function PartOnePage() {
           코드를 읽고 이해하기가 훨씬 쉬웠습니다.
           <br />
           <br />
-          테스트 계정
-          <br /> ID : minj92@kakao.com <br />
+          테스트 계정<br/>
+          첫 로그인 후 12시간 이후에 접속 해주세요
+          <p className="text-sm">(인증 문제로 인해 12시간 이후에 확인 가능합니다)</p>
+          ID : minj92@kakao.com <br />
           PW : fkdnxj0906!!
         </div>
         <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0">

@@ -30,12 +30,10 @@ export default function ConinList() {
   };
 
   const handleCoin = (num:number) => {
-    console.log(num);
     numitem(num + 2);
-    handleClickMove();
     setNumCoin(0)
+    handleClickMove();
   }
-  console.log();
   return (
     <div className="mt-3 xl:mt-0">
       <div className="flex justify-center items-center">
@@ -49,9 +47,9 @@ export default function ConinList() {
           style={{ width: '20px', height: '20px' }}
         />
       </div>
-      <div className="bg-[#e4e4ef] p-3 rounded-lg ">
+      <div className="bg-[#e4e4ef] p-3 rounded-full ">
         <div className="flex justify-center gap-x-2.5">
-          <input type="number" min={1} max={6} className="w-1/4 p-2 rounded-lg text-center"  onChange={(e)=> setNumCoin(Number(e.target.value)) }/>
+          <input type="number" min={1} max={6} className="w-1/4 p-2 rounded-lg text-center" value={numCoin} onChange={(e)=> setNumCoin(Number(e.target.value)) }/>
           <button type="button" className="focus:outline-none" onClick={()=>handleCoin(numCoin)}>
             <Image src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/btn/btn-str.png" width={60} height={100} alt="시작 버튼"/>
           </button>
