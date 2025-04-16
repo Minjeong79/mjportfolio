@@ -37,7 +37,7 @@ export default function ConinList() {
   return (
     <div className="mt-3 xl:mt-0">
       <div className="flex justify-center items-center">
-        <p className="mb-2 text-center">동전을 1~6개까지 넣을 수 있어요.<br />넣은 개수만큼 아이템이 나와요!</p>
+        <p className="mb-2 text-center">동전을 1~5개까지 넣을 수 있어요.<br />넣은 개수만큼 아이템이 나와요!</p>
         <Image
           className="animate-pulse"
           src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/coin/coin.png"
@@ -49,7 +49,7 @@ export default function ConinList() {
       </div>
       <div className="bg-[#e4e4ef] p-3 rounded-full ">
         <div className="flex justify-center gap-x-2.5">
-          <input type="number" min={1} max={6} className="w-1/4 p-2 rounded-lg text-center" value={numCoin} onChange={(e)=> setNumCoin(Number(e.target.value)) }/>
+          <input type="number" min={1} max={5} className="w-1/4 p-2 rounded-lg text-center" value={numCoin} onChange={(e)=> setNumCoin(Number(e.target.value)) }/>
           <button type="button" className="focus:outline-none" onClick={()=>handleCoin(numCoin)}>
             <Image src="https://fpjdvuxtsnhwwltmlwcx.supabase.co/storage/v1/object/public/img/btn/btn-str.png" width={60} height={100} alt="시작 버튼"/>
           </button>
