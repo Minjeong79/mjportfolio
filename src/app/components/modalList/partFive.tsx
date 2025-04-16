@@ -80,11 +80,16 @@ export default function PartFivePage() {
           이 과정에서 키를 어떻게 구조적으로 숨길지, 어떤 방식으로 안전하게 활용할지에 대한 이해도 함께 쌓을 수 있었습니다.
           <br />
           <br />
-          테스트 계정<br />
-          첫 로그인 후 12시간 이후에 접속 해주세요
-          <p className="text-sm">(인증 문제로 인해 12시간 이후에 확인 가능합니다)</p>
+          테스트 계정<br/>
+          카카오 로그인
+          <p className="text-sm">(인증으로 인해 첫 로그인 후 12시간 이후에 로그인 가능합니다.)</p>
           ID : minj92@kakao.com <br />
           PW : fkdnxj0906!!
+          <br/>
+          <br/>
+          Git로그인(바로 로그인 가능 합니다.)<br />
+          ID : jmjeong72@gmail.com<br />
+          PW : xptmxmrpwjd12!!
         </div>
         <div className="py-5 border-t border-slate-200 pb-48 xl:pb-0">
           <p className="text-sm">아이콘 클릭시 관련 된 주소로 이동 됩니다.</p>
